@@ -34,12 +34,20 @@
     font-weight: lighter;    
     position: absolute;
     right: 0;
-    top: 1.5em;
+    top: 1.45em;
 }
-.icon-uniE601:after{
+.icon-uniE601:before{
     
     background: orange;
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
     content: "\e601";
+    font-size: 3.75em;
+    font-weight: lighter;    
+    position: absolute;
+    top: 1.45em;
+    left: 0;
 }
 
 /*FOOTER*/
@@ -111,7 +119,7 @@
     margin-right: 0;
     display: inline-block;
     position: relative;
-    width: 30%;
+    min-width: 320px;
 }
 
 .Header-link{
@@ -171,8 +179,11 @@
     border-radius: 2em;
     color:white;
     margin-right: .25em;
+    margin-top: 0.5em;
     padding: .5em 1em;
     text-decoration: none;
+    display: inline-block;
+    margin-bottom: 0.2em;
 }
 
 .Profile-title{
@@ -209,4 +220,20 @@
     font-size: 1.5em;
     font-weight: normal;
     padding-top: 1.5em;
+}
+
+@media screen and (max-width: 337px){
+    .Header-imageContainer{
+        min-width: 280px;
+    }
+    .icon-uniE600:after{
+        font-size: 3em;
+        top: 1.6em;
+        right: 0.09em;
+    }
+    .icon-uniE601:before{
+        font-size: 3em;
+        left: 0.09em;
+    }
+
 }
